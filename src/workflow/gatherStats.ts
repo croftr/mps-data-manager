@@ -43,7 +43,7 @@ const sortMps = (a: Mp, b: Mp) => {
 
 export const createParties = async () => {
 
-    logger.info("Creating pary nodes")
+    logger.info("Creating party nodes")
 
     const result = await getPartyMpCounts(); 
 

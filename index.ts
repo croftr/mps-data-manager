@@ -6,14 +6,14 @@ import { setupNeo } from './src/workflow/neoManager';
 import { getDonations } from "./src/workflow/donationsManager";
 
 dotenv.config();
-// gatherStats();  
+gatherStats();  
 
 //TODO remove when not run in isolation
 
 const go = async () => {
-  await setupNeo();
-  await createParties();
-  await getDonations();
+  // await setupNeo();
+  // await createParties();
+  // await getDonations();
 }
 
 go();

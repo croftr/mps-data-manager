@@ -480,7 +480,7 @@ export const createDivisionNode = async (division: Division) => {
 
 export const createParyRelationships = async () => {
 
-    logger.info(`Createding pary relationships`);
+    logger.info(`Creating pary relationships`);
 
     const cypher = `MATCH (party:Party) MATCH (mp:Mp {partyName: party.partyName}) CREATE (mp)-[:MEMBER_OF]->(party)`;
 
